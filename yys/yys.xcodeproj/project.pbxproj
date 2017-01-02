@@ -13,6 +13,7 @@
 		C8ECC67F1E1A826B00EA4FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC67D1E1A826B00EA4FA5 /* Main.storyboard */; };
 		C8ECC6811E1A826B00EA4FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC6801E1A826B00EA4FA5 /* Assets.xcassets */; };
 		C8ECC6841E1A826B00EA4FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC6821E1A826B00EA4FA5 /* LaunchScreen.storyboard */; };
+		C8ECC68C1E1A838A00EA4FA5 /* offerReward.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC68B1E1A838A00EA4FA5 /* offerReward.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C8ECC6801E1A826B00EA4FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8ECC6831E1A826B00EA4FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8ECC6851E1A826B00EA4FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8ECC68B1E1A838A00EA4FA5 /* offerReward.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = offerReward.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				C8ECC6781E1A826B00EA4FA5 /* AppDelegate.m */,
 				C8ECC67A1E1A826B00EA4FA5 /* ViewController.h */,
 				C8ECC67B1E1A826B00EA4FA5 /* ViewController.m */,
+				C8ECC68B1E1A838A00EA4FA5 /* offerReward.plist */,
 				C8ECC67D1E1A826B00EA4FA5 /* Main.storyboard */,
 				C8ECC6801E1A826B00EA4FA5 /* Assets.xcassets */,
 				C8ECC6821E1A826B00EA4FA5 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				C8ECC6841E1A826B00EA4FA5 /* LaunchScreen.storyboard in Resources */,
 				C8ECC6811E1A826B00EA4FA5 /* Assets.xcassets in Resources */,
+				C8ECC68C1E1A838A00EA4FA5 /* offerReward.plist in Resources */,
 				C8ECC67F1E1A826B00EA4FA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSString *make = [[NSBundle mainBundle] pathForResource:@"offerReward" ofType:@"plist"];
+    NSDictionary *offerRewardDic = [[NSDictionary alloc] initWithContentsOfURL:[NSURL fileURLWithPath:make]];
+    NSLog(@"dic is %@", [offerRewardDic allKeys]);
 }
 
 
