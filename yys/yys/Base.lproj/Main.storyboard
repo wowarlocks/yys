@@ -12,7 +12,7 @@
         <!--悬赏封印-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,23 +21,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3TH-hn-Ext">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3TH-hn-Ext">
+                                <rect key="frame" x="0.0" y="64" width="120" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="kKI-gc-3jj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="GZ9-05-c7D"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="kEB-ME-Rjy"/>
+                                </connections>
                             </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6D-fC-qHa">
+                                <rect key="frame" x="122" y="64" width="253" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Nae-YJ-P6U"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MMI-4V-pvP"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AiG-Im-f6r">
+                                <rect key="frame" x="121" y="64" width="1" height="603"/>
+                                <color key="backgroundColor" red="0.0010310913705583458" green="0.0010310913705583458" blue="0.0010310913705583458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="INy-8e-FWV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3TH-hn-Ext" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IUB-Vt-75K"/>
-                            <constraint firstItem="3TH-hn-Ext" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Kfq-Tx-eMA"/>
-                            <constraint firstAttribute="trailing" secondItem="3TH-hn-Ext" secondAttribute="trailing" id="apn-sE-fMo"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3TH-hn-Ext" secondAttribute="bottom" id="rrj-gk-J6G"/>
+                            <constraint firstItem="3TH-hn-Ext" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1ie-lh-7nK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N6D-fC-qHa" secondAttribute="bottom" id="Ae6-As-kSr"/>
+                            <constraint firstItem="N6D-fC-qHa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FlL-Oh-oKd"/>
+                            <constraint firstItem="AiG-Im-f6r" firstAttribute="leading" secondItem="3TH-hn-Ext" secondAttribute="trailing" constant="1" id="GWr-2m-bpZ"/>
+                            <constraint firstItem="AiG-Im-f6r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TXQ-Sd-nPv"/>
+                            <constraint firstItem="3TH-hn-Ext" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zxg-5Y-CB8"/>
+                            <constraint firstItem="N6D-fC-qHa" firstAttribute="leading" secondItem="AiG-Im-f6r" secondAttribute="trailing" id="ekj-Gi-6OY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AiG-Im-f6r" secondAttribute="bottom" id="fPx-ok-01L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3TH-hn-Ext" secondAttribute="bottom" id="mec-ru-rWY"/>
+                            <constraint firstAttribute="trailing" secondItem="N6D-fC-qHa" secondAttribute="trailing" id="ywv-fk-aa7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="悬赏封印" id="7Wf-OD-325">
                         <barButtonItem key="leftBarButtonItem" title="帮助" id="wb2-fc-Rak"/>
                         <barButtonItem key="rightBarButtonItem" title="刷新" id="2Vt-Xd-aQv"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="rightTableview" destination="N6D-fC-qHa" id="4Tw-hX-mzT"/>
+                        <outlet property="tableview" destination="3TH-hn-Ext" id="nxe-I5-PhA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
