@@ -79,9 +79,12 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dav-4H-qB7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4IK-4X-ZBM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4IK-4X-ZBM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.24386510250000001" green="0.73659306759999998" blue="0.15298262239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.24386510250000001" green="0.73659306759999998" blue="0.15298262239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -90,7 +93,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed4-ks-YLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="777.66116941529242"/>
+            <point key="canvasLocation" x="118" y="560"/>
         </scene>
     </scenes>
 </document>

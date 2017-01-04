@@ -176,6 +176,12 @@ static network *shareInstance = nil;
                     monster *monsters     = [monster new];
                     monsters.monsterName  = [element2.children.firstObject stringValue];
                     monsters.monsterCount = [element2.children.lastObject  stringValue];
+//                    [element2.children[1] stringValue]
+                    if (element2.children.count > 2) {
+                        monsters.monsterName = [[element2.children.firstObject stringValue] stringByAppendingString:[NSString stringWithFormat:@" - %@",[element2.children[1] stringValue]]];
+                    }
+                    
+                    
                     [model.monsterArray addObject:monsters];
                 }
                 

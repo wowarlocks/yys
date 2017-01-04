@@ -51,12 +51,12 @@
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultController];
     self.searchController.searchResultsUpdater = self;
 //    [self.searchController.searchBar sizeToFit];
-    self.searchController.searchBar.placeholder = @"fuck";
+    self.searchController.searchBar.placeholder = @"神秘线索/怪物名";
 //    self.rightTableview.tableHeaderView = self.searchController.searchBar;
     
     self.navigationItem.titleView = self.searchController.searchBar;
 //    self.searchController.searchBar.barStyle = UIBarStyleBlack;
-    self.resultController.view.backgroundColor = [UIColor redColor];
+//    self.resultController.view.backgroundColor = [UIColor redColor];
     self.searchController.hidesNavigationBarDuringPresentation = NO;
     self.searchController.delegate = self;
     self.searchController.dimsBackgroundDuringPresentation = NO;
@@ -121,12 +121,12 @@
             NSMutableArray      *groupChapter  = [NSMutableArray new];
             //遍历对应数组模型、筛选符合的
             for (offerRewardModel *tempModel in testArray) {
-                
-                NSPredicate *predicate = [NSPredicate predicateWithFormat:@"monsterCount CONTAINS %@",searchStr];
+                //水池
+                NSPredicate *predicate = [NSPredicate predicateWithFormat:@"monsterCount  CONTAINS %@  OR monsterName CONTAINS %@",searchStr,searchStr];
                 //筛选之后的结果
                 NSArray *temp = [tempModel.monsterArray filteredArrayUsingPredicate:predicate];
                 
-                
+
                 
                 
                 
