@@ -21,6 +21,9 @@
 		C8ECC6991E1B786D00EA4FA5 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC6971E1B786D00EA4FA5 /* TableViewCell.xib */; };
 		C8ECC69D1E1B816300EA4FA5 /* rightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ECC69B1E1B816300EA4FA5 /* rightTableViewCell.m */; };
 		C8ECC69E1E1B816300EA4FA5 /* rightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC69C1E1B816300EA4FA5 /* rightTableViewCell.xib */; };
+		C8ECC6A41E1C00B800EA4FA5 /* resultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ECC6A31E1C00B800EA4FA5 /* resultTableViewController.m */; };
+		C8ECC6A81E1D206C00EA4FA5 /* resultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ECC6A61E1D206C00EA4FA5 /* resultTableViewCell.m */; };
+		C8ECC6A91E1D206C00EA4FA5 /* resultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8ECC6A71E1D206C00EA4FA5 /* resultTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,11 @@
 		C8ECC69A1E1B816300EA4FA5 /* rightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightTableViewCell.h; sourceTree = "<group>"; };
 		C8ECC69B1E1B816300EA4FA5 /* rightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightTableViewCell.m; sourceTree = "<group>"; };
 		C8ECC69C1E1B816300EA4FA5 /* rightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rightTableViewCell.xib; sourceTree = "<group>"; };
+		C8ECC6A21E1C00B800EA4FA5 /* resultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultTableViewController.h; sourceTree = "<group>"; };
+		C8ECC6A31E1C00B800EA4FA5 /* resultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultTableViewController.m; sourceTree = "<group>"; };
+		C8ECC6A51E1D206C00EA4FA5 /* resultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultTableViewCell.h; sourceTree = "<group>"; };
+		C8ECC6A61E1D206C00EA4FA5 /* resultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultTableViewCell.m; sourceTree = "<group>"; };
+		C8ECC6A71E1D206C00EA4FA5 /* resultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = resultTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,16 +112,14 @@
 				C8ECC6781E1A826B00EA4FA5 /* AppDelegate.m */,
 				C8ECC67A1E1A826B00EA4FA5 /* ViewController.h */,
 				C8ECC67B1E1A826B00EA4FA5 /* ViewController.m */,
-				C8ECC6951E1B786D00EA4FA5 /* TableViewCell.h */,
-				C8ECC6961E1B786D00EA4FA5 /* TableViewCell.m */,
-				C8ECC6971E1B786D00EA4FA5 /* TableViewCell.xib */,
-				C8ECC69A1E1B816300EA4FA5 /* rightTableViewCell.h */,
-				C8ECC69B1E1B816300EA4FA5 /* rightTableViewCell.m */,
-				C8ECC69C1E1B816300EA4FA5 /* rightTableViewCell.xib */,
-				C8ECC6921E1B70BD00EA4FA5 /* network.h */,
-				C8ECC6931E1B70BD00EA4FA5 /* network.m */,
-				C8ECC68D1E1B604300EA4FA5 /* offerRewardModel.h */,
-				C8ECC68E1E1B604300EA4FA5 /* offerRewardModel.m */,
+				C8ECC6A21E1C00B800EA4FA5 /* resultTableViewController.h */,
+				C8ECC6A31E1C00B800EA4FA5 /* resultTableViewController.m */,
+				C8ECC6A51E1D206C00EA4FA5 /* resultTableViewCell.h */,
+				C8ECC6A61E1D206C00EA4FA5 /* resultTableViewCell.m */,
+				C8ECC6A71E1D206C00EA4FA5 /* resultTableViewCell.xib */,
+				C8ECC69F1E1B9B9E00EA4FA5 /* CELL */,
+				C8ECC6A11E1B9BB300EA4FA5 /* NETWORK */,
+				C8ECC6A01E1B9BA600EA4FA5 /* MODEL */,
 				C8ECC68B1E1A838A00EA4FA5 /* offerReward.plist */,
 				C8ECC67D1E1A826B00EA4FA5 /* Main.storyboard */,
 				C8ECC6801E1A826B00EA4FA5 /* Assets.xcassets */,
@@ -130,6 +136,37 @@
 				C8ECC6751E1A826A00EA4FA5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8ECC69F1E1B9B9E00EA4FA5 /* CELL */ = {
+			isa = PBXGroup;
+			children = (
+				C8ECC6951E1B786D00EA4FA5 /* TableViewCell.h */,
+				C8ECC6961E1B786D00EA4FA5 /* TableViewCell.m */,
+				C8ECC6971E1B786D00EA4FA5 /* TableViewCell.xib */,
+				C8ECC69A1E1B816300EA4FA5 /* rightTableViewCell.h */,
+				C8ECC69B1E1B816300EA4FA5 /* rightTableViewCell.m */,
+				C8ECC69C1E1B816300EA4FA5 /* rightTableViewCell.xib */,
+			);
+			name = CELL;
+			sourceTree = "<group>";
+		};
+		C8ECC6A01E1B9BA600EA4FA5 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				C8ECC68D1E1B604300EA4FA5 /* offerRewardModel.h */,
+				C8ECC68E1E1B604300EA4FA5 /* offerRewardModel.m */,
+			);
+			name = MODEL;
+			sourceTree = "<group>";
+		};
+		C8ECC6A11E1B9BB300EA4FA5 /* NETWORK */ = {
+			isa = PBXGroup;
+			children = (
+				C8ECC6921E1B70BD00EA4FA5 /* network.h */,
+				C8ECC6931E1B70BD00EA4FA5 /* network.m */,
+			);
+			name = NETWORK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ECC6A91E1D206C00EA4FA5 /* resultTableViewCell.xib in Resources */,
 				C8ECC6841E1A826B00EA4FA5 /* LaunchScreen.storyboard in Resources */,
 				C8ECC6991E1B786D00EA4FA5 /* TableViewCell.xib in Resources */,
 				C8ECC6811E1A826B00EA4FA5 /* Assets.xcassets in Resources */,
@@ -260,8 +298,10 @@
 			files = (
 				C8ECC69D1E1B816300EA4FA5 /* rightTableViewCell.m in Sources */,
 				C8ECC6911E1B658600EA4FA5 /* offerRewardModel.m in Sources */,
+				C8ECC6A81E1D206C00EA4FA5 /* resultTableViewCell.m in Sources */,
 				C8ECC6981E1B786D00EA4FA5 /* TableViewCell.m in Sources */,
 				C8ECC67C1E1A826B00EA4FA5 /* ViewController.m in Sources */,
+				C8ECC6A41E1C00B800EA4FA5 /* resultTableViewController.m in Sources */,
 				C8ECC6791E1A826B00EA4FA5 /* AppDelegate.m in Sources */,
 				C8ECC6761E1A826A00EA4FA5 /* main.m in Sources */,
 				C8ECC6941E1B70BD00EA4FA5 /* network.m in Sources */,

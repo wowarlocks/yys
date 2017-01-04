@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--悬赏封印-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -50,11 +50,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3TH-hn-Ext" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1ie-lh-7nK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N6D-fC-qHa" secondAttribute="bottom" id="Ae6-As-kSr"/>
                             <constraint firstItem="N6D-fC-qHa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FlL-Oh-oKd"/>
                             <constraint firstItem="AiG-Im-f6r" firstAttribute="leading" secondItem="3TH-hn-Ext" secondAttribute="trailing" constant="1" id="GWr-2m-bpZ"/>
-                            <constraint firstItem="AiG-Im-f6r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TXQ-Sd-nPv"/>
+                            <constraint firstItem="AiG-Im-f6r" firstAttribute="top" secondItem="N6D-fC-qHa" secondAttribute="top" id="IXz-K6-tLE"/>
+                            <constraint firstItem="AiG-Im-f6r" firstAttribute="top" secondItem="3TH-hn-Ext" secondAttribute="top" id="Ny5-zE-ggR"/>
                             <constraint firstItem="3TH-hn-Ext" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zxg-5Y-CB8"/>
                             <constraint firstItem="N6D-fC-qHa" firstAttribute="leading" secondItem="AiG-Im-f6r" secondAttribute="trailing" id="ekj-Gi-6OY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AiG-Im-f6r" secondAttribute="bottom" id="fPx-ok-01L"/>
@@ -62,9 +62,8 @@
                             <constraint firstAttribute="trailing" secondItem="N6D-fC-qHa" secondAttribute="trailing" id="ywv-fk-aa7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="悬赏封印" id="7Wf-OD-325">
-                        <barButtonItem key="leftBarButtonItem" title="帮助" id="wb2-fc-Rak"/>
-                        <barButtonItem key="rightBarButtonItem" title="刷新" id="2Vt-Xd-aQv"/>
+                    <navigationItem key="navigationItem" id="7Wf-OD-325">
+                        <nil key="title"/>
                     </navigationItem>
                     <connections>
                         <outlet property="rightTableview" destination="N6D-fC-qHa" id="4Tw-hX-mzT"/>
@@ -73,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pTz-4Z-qUx">
